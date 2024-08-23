@@ -141,9 +141,9 @@ public class Maga {
                 Task tempTask = arr[tempInt - 1];
                 count--;
                 System.out.print("I've deleted this task:\n" + tempTask.getTaskType() + tempTask.getStatusIcon() +
-                        tempTask.getDescription() + "\nYou have " + count + " task(s) now!");
+                        tempTask.getDescription() + "\nYou have " + count + " task(s) now!\n");
                 for (int i = count; i < 99; i++) {
-                    arr[i + 1] = arr[i - 1];
+                    arr[i + 1] = arr[i];
                 }
                 input = scanner.nextLine();
                 continue;
